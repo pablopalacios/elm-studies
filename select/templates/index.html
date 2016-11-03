@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Elm Select</title>
+  </head>
+  <body>
+    <h1>Elm Select</h1>
+    <div id="select"></div>
+    <script src="{{ url_for('static', filename='select.js') }}"></script>
+    <script>
+     var node = document.getElementById('select');
+     var app = Elm.Select.embed(node);
+    </script>
+  </body>
+</html>
